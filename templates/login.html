@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login nichh</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <form action="{{ url_for('login') }}" method="post">
+            <h1>Malaikat meminta</h1>
+            <label for="nama">Namamu wir:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required>
+            
+            <label for="alamat">Alamatnya sekalian wir:</label>
+            <input type="text" id="alamat" name="alamat" placeholder="Masukkan Alamat" required>
+            
+            <label for="nim">NIM nya berapa wir:</label>
+            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
